@@ -1,0 +1,166 @@
+.nav {
+}
+
+.nav__items {
+    overflow-x: scroll;
+    display: flex;
+    gap: 24px;
+}
+
+.nav__items::-webkit-scrollbar {
+    width: 0;
+}
+
+.nav__item {
+}
+
+.category-btn {
+}
+
+/*============================================MAIN============================================*/
+
+.main__container {
+    display: flex;
+}
+
+.card {
+    max-width: 300px;
+    padding: 24px 16px;
+}
+
+.card__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__title > h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card__title > span {
+    display: block;
+    font-size: 12px;
+    padding: 2px 16px;
+    height: 100%;
+    border-radius: 6px;
+    background: #F2F2F3;
+}
+
+.card__goods {
+display: flex;
+flex-direction: column;
+margin-bottom: 16px;
+}
+
+.good {
+width: 268px;
+display: grid;
+grid-template-columns: auto 1fr 1fr;
+align-items: center;
+padding: 16px 0;
+border-top: 1px solid #F2F2F3;
+border-bottom: 1px solid #F2F2F3;
+}
+
+.good__img {
+width: 64px;
+height: 52px;
+border-radius: 8px;
+overflow: hidden;
+margin-right: 6px;
+}
+
+.good__img > img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center ;
+}
+
+.good__info {
+justify-self: start;
+font-size: 12px;
+height: 100%;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.good__info span {
+display: block;
+}
+
+.good__name {
+margin-bottom: 1px;
+}
+
+.good__weight {
+color: #B1B1B1;
+margin-bottom: 2px;
+}
+
+.good__price {
+
+}
+
+.good__count {
+width: 84px;
+height: 40px;
+border-radius: 12px;
+background: #F2F2F3;
+font-size: 16px;
+
+justify-self: end;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.plus, .minus {
+padding: 0 12px;
+}
+
+.minus {
+}
+
+.card__amount {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 24px;
+}
+.card__amount > h4{
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+}
+.card__amount > span:after{
+content: '₽';
+}
+
+.order-btn {
+margin-bottom: 8px;
+}
+
+.card__delivery {
+display: flex;
+gap: 4px;
+align-items: center;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.card__delivery > img{
+width: 24px;
+height: 24px;
+object-fit: cover;
+}
+.card__delivery > span{
+display: block;
+}

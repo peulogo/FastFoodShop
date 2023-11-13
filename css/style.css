@@ -1,0 +1,92 @@
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+@import "normalize.css";
+@import "vars.css";
+@import "view.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--white-l);
+}
+h2,h3,h4{
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: 1px solid transparent;
+    background: unset;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.category-btn {
+    background: white;
+    border-radius: 50px;
+    padding: 8px 14px;
+    transition: border ease .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.category-btn > span {
+    text-wrap: nowrap;
+}
+
+.category-btn > img {
+    width: 24px;
+    height: 24px;
+}
+
+.category-btn:hover {
+    border: 1px solid #F86310;
+}
+
+._active {
+    background: var(--orange);
+}
+
+.order-btn {
+    width: 100%;
+    padding: 11px 0;
+    color: #FFF;
+    line-height: 100%;
+    border-radius: 12px;
+    background: var(--orange);
+    transition: background ease .5s;
+}
+.order-btn:hover{
+    background: var(--yellow);
+}
+.add-btn {
+
+}
+
+
+.social-btn {
+
+}
