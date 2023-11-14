@@ -1,9 +1,21 @@
 window.addEventListener('load', function(){document.body.classList.remove('loading')})
 
 const cart = document.querySelector('.card__container');
+const product = document.querySelector('.product__item');
+const popup = document.querySelector('.popup');
+const closeBtn = document.querySelector('.popup__close-btn');
 
 cart.addEventListener('click', () => {
     if(window.innerWidth <= 785){
         cart.classList.toggle("_active-card")
     }
 });
+
+product.addEventListener('click', () =>{
+    popup.classList.add('_active-popup');
+    document.body.classList.add('unscroll')
+})
+closeBtn.addEventListener('click', () => {
+    popup.classList.remove('_active-popup');
+    document.body.classList.remove('unscroll')
+})
