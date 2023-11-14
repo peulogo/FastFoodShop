@@ -6,6 +6,9 @@
 @import "view.css";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
 
+.unscroll{
+    overflow: hidden;
+}
 body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;

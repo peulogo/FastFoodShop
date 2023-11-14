@@ -179,6 +179,70 @@
         font-size: 12px!important;
         padding: 9px!important;
     }
+
+
+    .popup {
+    }
+
+    .popup__container {
+        padding: 16px 16px 24px 16px;
+        width: 524px;
+    }
+
+    .popup__header {
+        margin-bottom: 16px;
+    }
+
+    .popup__title {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    .popup__close-btn {
+    }
+
+    .popup__body {
+        margin-bottom: 24px;
+        gap: 8px;
+    }
+
+    .popup__img {
+        min-width: 226px;
+        height: 180px;
+    }
+
+    .popup__info {
+    }
+
+    .info {
+    }
+
+    .info__text {
+        font-size: 12px;
+    }
+
+    .popup__footer {
+        height: 30px;
+        gap: 8px
+    }
+
+    .popup_add-btn {
+        font-size: 12px;
+        width: 218px;
+        padding: 9px;
+        border-radius: 8px;
+    }
+
+.popup__count{
+    border-radius: 8px;
+}
+
+    .popup__price {
+        font-size: 16px;
+        line-height: 130%;
+    }
 }
     @media (max-width: 560px) {
         .header {
@@ -218,9 +282,7 @@
 
         /*======= HEADER =======*/
 
-        ._active-card > .card__body{
-            width: 100%;
-        }
+
         .product__items {
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
