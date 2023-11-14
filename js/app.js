@@ -1,6 +1,9 @@
-const audio = document.querySelector('#audio');
-const btnka = document.querySelector('#btnka');
+window.addEventListener('load', function(){document.body.classList.remove('loading')})
 
-btnka.addEventListener('click', () => {
-    audio.paused ? audio.play() : audio.pause();
+const cart = document.querySelector('.card__container');
+
+cart.addEventListener('click', () => {
+    if(window.innerWidth <= 785){
+        cart.classList.toggle("_active-card")
+    }
 });

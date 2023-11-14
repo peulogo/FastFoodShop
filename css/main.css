@@ -1,14 +1,17 @@
 .nav {
+    overflow: scroll;
 }
 
 .nav__items {
-    overflow-x: scroll;
+    width: 100vw;
     display: flex;
     gap: 24px;
 }
 
-.nav__items::-webkit-scrollbar {
+.nav::-webkit-scrollbar {
+    visibility: hidden;
     width: 0;
+    height: 0;
 }
 
 .nav__item {
@@ -21,17 +24,24 @@
 
 .main__container {
     display: flex;
+    padding-top: 50px!important;
+}
+.card{
+    margin-top: 72px;
 }
 
-.card {
+.card__container {
     max-width: 300px;
     padding: 24px 16px;
+    border-radius: 18px;
+    background: #FFF;
 }
 
 .card__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 12px;
 }
 
 .card__title > h3 {
@@ -49,56 +59,57 @@
 }
 
 .card__goods {
-display: flex;
-flex-direction: column;
-margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
 }
 
 .good {
-width: 268px;
-display: grid;
-grid-template-columns: auto 1fr 1fr;
-align-items: center;
-padding: 16px 0;
-border-top: 1px solid #F2F2F3;
-border-bottom: 1px solid #F2F2F3;
+    width: 268px;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid #F2F2F3;
+    border-bottom: 1px solid #F2F2F3;
 }
 
 .good__img {
-width: 64px;
-height: 52px;
-border-radius: 8px;
-overflow: hidden;
-margin-right: 6px;
+    width: 64px;
+    height: 52px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 6px;
 }
 
 .good__img > img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-object-position: center ;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .good__info {
-justify-self: start;
-font-size: 12px;
-height: 100%;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    justify-self: start;
+    font-size: 12px;
+    height: 100%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .good__info span {
-display: block;
+    display: block;
 }
 
 .good__name {
-margin-bottom: 1px;
+    margin-bottom: 1px;
+    text-wrap: nowrap;
 }
 
 .good__weight {
-color: #B1B1B1;
-margin-bottom: 2px;
+    color: #B1B1B1;
+    margin-bottom: 2px;
 }
 
 .good__price {
@@ -106,61 +117,129 @@ margin-bottom: 2px;
 }
 
 .good__count {
-width: 84px;
-height: 40px;
-border-radius: 12px;
-background: #F2F2F3;
-font-size: 16px;
+    width: 84px;
+    height: 40px;
+    border-radius: 12px;
+    background: #F2F2F3;
+    font-size: 16px;
 
-justify-self: end;
+    justify-self: end;
 
-display: flex;
-justify-content: space-between;
-align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .plus, .minus {
-padding: 0 12px;
+    padding: 0 12px;
 }
 
 .minus {
 }
 
 .card__amount {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
 }
-.card__amount > h4{
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 130%;
+
+.card__amount > h4 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
 }
-.card__amount > span:after{
-content: '₽';
+
+.card__amount > span:after {
+    content: '₽';
 }
 
 .order-btn {
-margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .card__delivery {
-display: flex;
-gap: 4px;
-align-items: center;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.card__delivery > img{
-width: 24px;
-height: 24px;
-object-fit: cover;
+.card__delivery > img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
 }
-.card__delivery > span{
-display: block;
+
+.card__delivery > span {
+    display: block;
+}
+
+.main__container{
+    display: flex;
+    gap: 30px;
+}
+.product {
+    width: 100%;
+}
+
+.product__container {
+}
+
+.product__category {
+}
+
+.product__items {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 30px;
+}
+
+.product__item {
+    border-radius: 18px;
+    background: #FFF;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product__img {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.product__img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product__price {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 8px;
+}
+.product__price:after {
+    content: '₽';
+}
+
+.product__name{
+    margin-bottom: 29px;
+}
+.product__weight {
+    color: #B1B1B1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 130%;
+    display: block;
+    margin-bottom: 8px;
 }

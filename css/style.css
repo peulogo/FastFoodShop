@@ -15,7 +15,10 @@ body {
 
     background-color: var(--white-l);
 }
-h2,h3,h4{
+
+body.loading *{transition: 0s!important;}
+
+h1,h2,h3,h4{
     margin: 0;
 }
 p{
@@ -83,9 +86,16 @@ button {
     background: var(--yellow);
 }
 .add-btn {
-
+    /*transition: color .5 .5s, background-color .5 .5s;*/
+    padding: 11px 0;
+    font-size: 16px;
+    border-radius: 12px;
+    background: #F2F2F3;
 }
-
+.add-btn:hover{
+    color: #FFF;;
+    background: #FFAB08;
+}
 
 .social-btn {
 

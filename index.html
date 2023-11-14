@@ -8,151 +8,197 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>DREAM HOUSE</title>
 </head>
-<body>
+<body class="loading">
 <header class="header">
-   <div class="header__container container">
-       <a href="" class="header__logo"><img src="./img/logo.svg" alt=""></a>
-       <div class="header__inner">
-           <div class="header__img">
-               <img src="./img/header-img.svg" alt="">
-           </div>
-           <div class="header__text">
-               <div class="header__title"><span>Только самые</span> сочные бургеры!</div>
-               <div class="header__subtitle">Бесплатная доставка от 599₽</div>
-           </div>
-       </div>
-   </div>
+    <div class="header__container container">
+        <a href="" class="header__logo"><img src="./img/logo.svg" alt=""></a>
+        <div class="header__inner">
+            <div class="header__img">
+                <img src="./img/header-img.svg" alt="">
+            </div>
+            <div class="header__text">
+                <div class="header__title"><span>Только самые</span> сочные бургеры!</div>
+                <div class="header__subtitle">Бесплатная доставка от 599₽</div>
+            </div>
+        </div>
+    </div>
 </header>
 
 <nav class="nav">
-<div class="container">
-    <ul class="nav__items">
-        <li class="nav__item">
-            <button class="category-btn">
-                <img src="./img/icons/burger.svg" alt="">
-                <span>Бургеры</span>
-            </button>
-        </li>
-        <li class="nav__item">
-            <button class="category-btn">
-                <img src="./img/icons/Закуски.svg" alt="">
-                <span>Закуски</span>
-            </button>
-        </li>
-        <li class="nav__item">
-            <button class="category-btn">
-                <img src="./img/icons/Хот-доги.svg" alt="">
-                <span>Хот-доги</span>
-            </button>
-        </li>
-        <li class="nav__item">
-            <button class="category-btn">
-                <img src="./img/icons/Комбо.svg" alt="">
-                <span>Комбо</span>
-            </button>
-        </li>
-        <li class="nav__item">
-            <button class="category-btn">
-                <img src="./img/icons/Шаурма.svg" alt="">
-                <span>Шаурма</span>
-            </button>
-        </li>
-        <li class="nav__item">
-            <button class="category-btn">
-                <img src="./img/icons/Пицца.svg" alt="">
-                <span>Пицца</span>
-            </button>
-        </li>
-        <li class="nav__item">
-            <button class="category-btn">
-                <img src="./img/icons/Вок.svg" alt="">
-                <span>Вок</span>
-            </button>
-        </li>
-        <li class="nav__item">
-            <button class="category-btn">
-                <img src="./img/icons/Десерты.svg" alt="">
-                <span>Десерты</span>
-            </button>
-        </li>
-        <li class="nav__item">
-            <button class="category-btn">
-                <img src="./img/icons/Соусы.svg" alt="">
-                <span>Соусы</span>
-            </button>
-        </li>
-    </ul>
-</div>
+    <div class="container">
+        <ul class="nav__items">
+            <li class="nav__item">
+                <button class="category-btn _active">
+                    <img src="./img/icons/burger.svg" alt="">
+                    <span>Бургеры</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="category-btn">
+                    <img src="./img/icons/Закуски.svg" alt="">
+                    <span>Закуски</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="category-btn">
+                    <img src="./img/icons/Хот-доги.svg" alt="">
+                    <span>Хот-доги</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="category-btn">
+                    <img src="./img/icons/Комбо.svg" alt="">
+                    <span>Комбо</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="category-btn">
+                    <img src="./img/icons/Шаурма.svg" alt="">
+                    <span>Шаурма</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="category-btn">
+                    <img src="./img/icons/Пицца.svg" alt="">
+                    <span>Пицца</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="category-btn">
+                    <img src="./img/icons/Вок.svg" alt="">
+                    <span>Вок</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="category-btn">
+                    <img src="./img/icons/Десерты.svg" alt="">
+                    <span>Десерты</span>
+                </button>
+            </li>
+            <li class="nav__item">
+                <button class="category-btn">
+                    <img src="./img/icons/Соусы.svg" alt="">
+                    <span>Соусы</span>
+                </button>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <main class="main">
-<div class="container main__container">
-    <aside class="card">
-        <div class="card__title">
-            <h3>Корзина</h3>
-            <span>4</span>
-        </div>
-        <ul class="card__goods goods">
-            <li class="good">
-                <div class="good__img">
-                    <img src="./img/card_item-1.jfif" alt="" srcset="">
+    <div class="container main__container">
+        <aside class="card">
+            <div class="card__container">
+                <div class="card__title">
+                    <h3>Корзина</h3>
+                    <span>4</span>
                 </div>
-                <div class="good__info">
-                    <p class="good__name">Супер сырный</p>
-                    <span class="good__weight">512г</span>
-                    <span class="good__price">550₽</span>
+                <div class="card__body">
+                    <ul class="card__goods goods">
+                        <li class="good">
+                            <div class="good__img">
+                                <img src="./img/card_item-1.jfif" alt="" srcset="">
+                            </div>
+                            <div class="good__info">
+                                <p class="good__name">Супер сырный</p>
+                                <span class="good__weight">512г</span>
+                                <span class="good__price">550₽</span>
+                            </div>
+                            <div class="good__count">
+                                <button class="minus">-</button>
+                                <span>1</span>
+                                <button class="plus">+</button>
+                            </div>
+                        </li>
+                        <li class="good">
+                            <div class="good__img">
+                                <img src="./img/card_item-2.jfif" alt="" srcset="">
+                            </div>
+                            <div class="good__info">
+                                <p class="good__name">Картошка фри</p>
+                                <span class="good__weight">180г</span>
+                                <span class="good__price">245₽</span>
+                            </div>
+                            <div class="good__count">
+                                <button class="minus">-</button>
+                                <span>2</span>
+                                <button class="plus">+</button>
+                            </div>
+                        </li>
+                        <li class="good">
+                            <div class="good__img">
+                                <img src="./img/card_item-3.jfif" alt="" srcset="">
+                            </div>
+                            <div class="good__info">
+                                <p class="good__name">Жгучий хот-дог</p>
+                                <span class="good__weight">245г</span>
+                                <span class="good__price">239₽</span>
+                            </div>
+                            <div class="good__count">
+                                <button class="minus">-</button>
+                                <span>1</span>
+                                <button class="plus">+</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="card__amount">
+                        <h4>Итого</h4>
+                        <span>1279</span>
+                    </div>
+                    <button class="order-btn">Оформить заказ</button>
+                    <div class="card__delivery">
+                        <img src="./img/icons/Доставка.svg" alt="">
+                        <span>Бесплатная доставка</span>
+                    </div>
                 </div>
-                <div class="good__count">
-                    <button class="minus">-</button>
-                    <span>1</span>
-                    <button class="plus">+</button>
-                </div>
-            </li>
-            <li class="good">
-                <div class="good__img">
-                    <img src="./img/card_item-2.jfif" alt="" srcset="">
-                </div>
-                <div class="good__info">
-                    <p class="good__name">Картошка фри</p>
-                    <span class="good__weight">180г</span>
-                    <span class="good__price">245₽</span>
-                </div>
-                <div class="good__count">
-                    <button class="minus">-</button>
-                    <span>2</span>
-                    <button class="plus">+</button>
-                </div>
-            </li>
-            <li class="good">
-                <div class="good__img">
-                    <img src="./img/card_item-3.jfif" alt="" srcset="">
-                </div>
-                <div class="good__info">
-                    <p class="good__name">Жгучий хот-дог</p>
-                    <span class="good__weight">245г</span>
-                    <span class="good__price">239₽</span>
-                </div>
-                <div class="good__count">
-                    <button class="minus">-</button>
-                    <span>1</span>
-                    <button class="plus">+</button>
-                </div>
-            </li>
-        </ul>
-        <div class="card__amount">
-            <h4>Итого</h4>
-            <span>1279</span>
-        </div>
-        <button class="order-btn">Оформить заказ</button>
-        <div class="card__delivery">
-            <img src="./img/icons/Доставка.svg" alt="">
-            <span>Бесплатная доставка</span>
-        </div>
-    </aside>
-    <section class="goods">
-
-    </section>
-</div>
+            </div>
+        </aside>
+        <section class="product">
+            <div class="product__container">
+                <h1 class="product__category">
+                    Бургеры
+                </h1>
+                <ul class="product__items">
+                    <li class="product__item">
+                        <div class="product__img">
+                            <img src="./img/product-item-1.jfif" alt="">
+                        </div>
+                        <h3 class="product__price">689</h3>
+                        <p class="product__name">Мясная бомба</p>
+                        <span class="product__weight">520г</span>
+                        <button class="add-btn">Добавить</button>
+                    </li>
+                    <li class="product__item">
+                        <div class="product__img">
+                            <img src="./img/product-item-1.jfif" alt="">
+                        </div>
+                        <h3 class="product__price">689</h3>
+                        <p class="product__name">Мясная бомба</p>
+                        <span class="product__weight">520г</span>
+                        <button class="add-btn">Добавить</button>
+                    </li>
+                    <li class="product__item">
+                        <div class="product__img">
+                            <img src="./img/product-item-1.jfif" alt="">
+                        </div>
+                        <h3 class="product__price">689</h3>
+                        <p class="product__name">Мясная бомба</p>
+                        <span class="product__weight">520г</span>
+                        <button class="add-btn">Добавить</button>
+                    </li>
+                    <li class="product__item">
+                        <div class="product__img">
+                            <img src="./img/product-item-1.jfif" alt="">
+                        </div>
+                        <h3 class="product__price">689</h3>
+                        <p class="product__name">Мясная бомба</p>
+                        <span class="product__weight">520г</span>
+                        <button class="add-btn">Добавить</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
 </main>
 
 <footer class="footer">
