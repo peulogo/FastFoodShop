@@ -218,8 +218,21 @@
 
         /*======= HEADER =======*/
 
+        ._active-card > .card__body{
+            width: 100%;
+        }
+        .product__items {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
 
     }
+@media (max-width: 460px) {
+    .product__items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
     @media (max-width: 320px) {
         .header::before {
             width: 611px;
