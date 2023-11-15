@@ -5,9 +5,7 @@
 @import "vars.css";
 @import "view.css";
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
-:root{
-    --vh: 1vh
-}
+
 .unscroll{
     overflow: hidden;
 }
