@@ -5,9 +5,6 @@ const products = document.querySelectorAll('.product__item');
 const popup = document.querySelector('.popup');
 const closeBtn = document.querySelector('.popup__close-btn');
 
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
-
 cart.addEventListener('click', () => {
     if(window.innerWidth <= 785){
         cart.classList.toggle("_active-card")
